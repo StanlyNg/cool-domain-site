@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册.COOL域名 - 让你的网站更酷</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><span class="cool-text">.COOL</span> 域名注册</h1>
+            <p>让你的在线身份更酷、更难忘</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#pricing">价格</a></li>
+                <li><a href="#features">特点</a></li>
+                <li><a href="#api">开发者API</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="search" class="domain-search">
+            <h2>查找你的完美.COOL域名</h2>
+            <form id="domainSearchForm">
+                <input type="text" placeholder="输入你想要的域名..." id="domainInput" required>
+                <button type="submit">立即搜索</button>
+            </form>
+            <div id="searchResults" class="results-container"></div>
+        </section>
+
+        <section id="features">
+            <h2>为什么选择.COOL域名？</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-fire"></i>
+                    <h3>脱颖而出</h3>
+                    <p>在拥挤的.com世界中脱颖而出，.COOL域名让你的网站立即引人注目。</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>创意无限</h3>
+                    <p>完美适合创意人士、科技公司、时尚品牌和任何想要展示酷炫一面的个人或企业。</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>全球认可</h3>
+                    <p>.COOL是通用顶级域名(gTLD)，全球认可，适合任何国际业务或个人品牌。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <h2>定价方案</h2>
+            <div class="pricing-table">
+                <div class="pricing-card">
+                    <h3>1年注册</h3>
+                    <div class="price">$25.99</div>
+                    <ul>
+                        <li>免费WHOIS隐私保护</li>
+                        <li>免费DNS管理</li>
+                        <li>24/7客户支持</li>
+                    </ul>
+                    <button class="btn-register" data-years="1">立即注册</button>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="popular-badge">最受欢迎</div>
+                    <h3>2年注册</h3>
+                    <div class="price">$45.99 <span class="save">节省 $6.00</span></div>
+                    <ul>
+                        <li>免费WHOIS隐私保护</li>
+                        <li>免费DNS管理</li>
+                        <li>24/7客户支持</li>
+                        <li>免费域名锁定</li>
+                    </ul>
+                    <button class="btn-register" data-years="2">立即注册</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>5年注册</h3>
+                    <div class="price">$99.99 <span class="save">节省 $30.00</span></div>
+                    <ul>
+                        <li>免费WHOIS隐私保护</li>
+                        <li>免费DNS管理</li>
+                        <li>24/7客户支持</li>
+                        <li>免费域名锁定</li>
+                        <li>免费电子邮件转发</li>
+                    </ul>
+                    <button class="btn-register" data-years="5">立即注册</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="api">
+            <h2>开发者API</h2>
+            <div class="api-docs">
+                <p>使用我们的REST API集成域名搜索和注册功能到您的应用程序中。</p>
+                
+                <h3>域名搜索API</h3>
+                <pre><code>POST /api/search
+Content-Type: application/json
+
+{
+    "domain": "example.cool"
+}
+
+响应:
+{
+    "available": true|false,
+    "price": 25.99,
+    "currency": "USD"
+}</code></pre>
+
+                <h3>域名注册API</h3>
+                <pre><code>POST /api/register
+Content-Type: application/json
+Authorization: Bearer YOUR_API_KEY
+
+{
+    "domain": "example.cool",
+    "years": 1,
+    "contact": {
+        "name": "John Doe",
+        "email": "john@example.com",
+        "address": "..."
+    }
+}
+
+响应:
+{
+    "success": true|false,
+    "message": "Registration successful",
+    "expiry_date": "2025-01-01"
+}</code></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于我们</h3>
+                    <p>我们是一家专业的域名注册服务提供商，专注于提供独特的顶级域名注册服务。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#pricing">价格</a></li>
+                        <li><a href="#api">API文档</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系方式</h3>
+                    <p><i class="fas fa-envelope"></i> support@cool-domains.example</p>
+                    <p><i class="fas fa-phone"></i> +1 (800) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 .COOL域名注册服务. 保留所有权利.</p>
+                <div class="legal-links">
+                    <a href="/privacy">隐私政策</a> | 
+                    <a href="/terms">服务条款</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>注册 <span id="modalDomainName"></span></h2>
+            <form id="registrationForm">
+                <input type="hidden" id="selectedDomain">
+                <input type="hidden" id="selectedYears">
+                
+                <div class="form-group">
+                    <label for="fullName">全名</label>
+                    <input type="text" id="fullName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">电子邮件</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">地址</label>
+                    <textarea id="address" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="payment">支付方式</label>
+                    <select id="payment" required>
+                        <option value="">选择支付方式</option>
+                        <option value="credit">信用卡</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="crypto">加密货币</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn-submit">完成注册</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
